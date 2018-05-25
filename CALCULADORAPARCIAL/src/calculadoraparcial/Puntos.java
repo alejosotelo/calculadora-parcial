@@ -20,11 +20,18 @@ public class Puntos {
 
     public double dis(int x1, int x2, int y1, int y2){
 
-        double respuest;
+        double resdis;
         double res1,res2;
-
+        double difx, dify;
+        
+//difx y dif y son la diferencia entre los puntos
         res1=this.x2-this.x1;   res2=this.y2-this.y1;
         res1=Math.pow(res1, 2)+Math.pow(res2, 2);
-        respuest=Math.sqrt(res1);
-         return respuest; }
+        resdis=Math.sqrt(res1);
+        difx=res1*y1;
+        dify=res2*res1;
+        
+        
+        
+         return resdis; }
 }
